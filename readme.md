@@ -6,6 +6,11 @@ $ npm run dev
 $ npm run prod
 ```
 
+## Modules
+### CSS
+* [style-loader](https://www.npmjs.com/package/style-loader)
+* [css-loader](https://www.npmjs.com/package/css-loader)
+
 ## TODO
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
 
