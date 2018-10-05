@@ -7,11 +7,19 @@ $ npm run prod
 ```
 
 ## Modules
+
 ### CSS
 * [style-loader](https://www.npmjs.com/package/style-loader)
 * [css-loader](https://www.npmjs.com/package/css-loader)
 
+### Image
+* [file-loader](https://www.npmjs.com/package/file-loader)
+
 ## TODO
+* [ ] Load dist image from app/index.html
+
+## TASK
+* [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
 
 ## REF
