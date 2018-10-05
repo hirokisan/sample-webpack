@@ -7,7 +7,7 @@ $ npm run prod
 ```
 
 ## TODO
-* [/] [Getting Started](https://webpack.js.org/guides/getting-started/)
+* [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
 
 ## REF
 * [npm package.json 日本語版 取扱説明書](http://liberty-technology.biz/PublicItems/npm/package.json.html)
