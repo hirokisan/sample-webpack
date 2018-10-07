@@ -22,13 +22,19 @@ module.exports = {
         use: [
           'file-loader'
         ]
-      }
+      },
     ]
   },
   optimization: {
     splitChunks: {
-      name: 'vendor',
-      chunks: 'initial',
+      cacheGroups: {
+        vendor: {
+          test: /node_modules/,
+          name: 'vendor',
+          chunks: 'initial',
+          enforce: true
+        }
+      }
     }
   }
 };
