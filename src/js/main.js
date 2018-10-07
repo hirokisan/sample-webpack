@@ -1,6 +1,8 @@
+// ここで読み込んだファイルがloaderによって処理される
 import _ from 'lodash';
 import '../css/app.scss';
 import '../css/style.css';
+import json from '../json/name.json';
 import Icon from '../img/icon.png';
 
 function component() {
@@ -13,6 +15,7 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
+  console.log(json.data);
 
   return element;
 }

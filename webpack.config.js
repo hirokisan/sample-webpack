@@ -31,6 +31,13 @@ module.exports = {
           'file-loader'
         ]
       },
+      {
+        type: 'javascript/auto',
+        test: /\.json$/,
+        use: [
+          'json-loader'
+        ]
+      },
     ]
   },
   optimization: {
