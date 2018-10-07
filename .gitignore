@@ -37,5 +37,6 @@ node_modules
 
 dist/*
 !.gitignore
+!index.html
 
 .DS_Store
