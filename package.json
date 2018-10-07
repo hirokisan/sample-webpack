@@ -23,7 +23,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "yaml-loader": "^0.5.0"
   },
   "dependencies": {
     "animate-scss": "^3.2.1",

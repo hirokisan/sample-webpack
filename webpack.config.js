@@ -12,6 +12,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        /*
+         * use: ran right to left
+         * @example 1. css-loader 2. style-loader
+         */
         use: [
           'style-loader',
           'css-loader'
@@ -38,6 +42,13 @@ module.exports = {
           header: true,
           skipEmptyLines: true
         }
+      },
+      {
+        test: /\.(yaml|yml)$/,
+        use: [
+          'json-loader',
+          'yaml-loader'
+        ]
       },
       /*
        * webpack v4 support json default
