@@ -32,12 +32,23 @@ module.exports = {
         ]
       },
       {
+        test: /\.(csv|tsv)$/,
+        loader: 'csv-loader',
+        options: {
+          header: true,
+          skipEmptyLines: true
+        }
+      },
+      /*
+       * webpack v4 support json default
+      {
         type: 'javascript/auto',
         test: /\.json$/,
         use: [
           'json-loader'
         ]
       },
+      */
     ]
   },
   optimization: {

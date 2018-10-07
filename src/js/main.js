@@ -2,6 +2,7 @@
 import _ from 'lodash';
 import '../css/app.scss';
 import '../css/style.css';
+import csv  from '../csv/name.csv';
 import json from '../json/name.json';
 import Icon from '../img/icon.png';
 
@@ -15,7 +16,8 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
-  console.log(json.data);
+  console.log(json);
+  console.log(csv);
 
   return element;
 }

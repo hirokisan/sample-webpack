@@ -18,6 +18,13 @@ $ npm run prod
 ### Image
 * [file-loader](https://www.npmjs.com/package/file-loader)
 
+### csv
+* [csv-loader](https://www.npmjs.com/package/csv-loader)
+* [papaparse](https://www.npmjs.com/package/papaparse)
+
+### Json
+* [json-loader](https://www.npmjs.com/package/json-loader)
+
 ## TODO
 * [ ] Load dist image from app/index.html
 * [ ] Load fontawesome with webpack
