@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import '../css/app.scss';
 import '../css/style.css';
 import Icon from '../img/icon.png';
 

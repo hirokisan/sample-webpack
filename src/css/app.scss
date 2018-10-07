@@ -1,0 +1,7 @@
+@import "node_modules/animate-scss/animate.scss";
+
+.hello {
+	@include fadeIn(
+	$duration: 2s,
+	);
+}
