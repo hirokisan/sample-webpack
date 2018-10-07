@@ -18,15 +18,41 @@ module.exports = {
          */
         use: [
           'style-loader',
-          'css-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('autoprefixer')({grid: true})
+              ]
+            }
+          }
         ]
       },
       {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader',
-          "sass-loader"
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            }
+          },
+          "sass-loader",
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                require('autoprefixer')({grid: true})
+              ]
+            }
+          }
         ]
       },
       {

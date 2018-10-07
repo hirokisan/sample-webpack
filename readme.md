@@ -26,10 +26,14 @@ $ npm run prod
 
 ### Image
 * [file-loader](https://www.npmjs.com/package/file-loader)
+* [image-webpack-loader](https://www.npmjs.com/package/image-webpack-loader)
 
 ### csv
 * [csv-loader](https://www.npmjs.com/package/csv-loader)
 * [papaparse](https://www.npmjs.com/package/papaparse)
+
+### Yaml
+* [yaml-loader](https://www.npmjs.com/package/yaml-loader)
 
 ### Json
 * [json-loader](https://www.npmjs.com/package/json-loader)
@@ -37,6 +41,8 @@ $ npm run prod
 ## TODO
 * [ ] Load dist image from app/index.html
 * [ ] Load fontawesome with webpack
+* [ ] Pass args to webpack.config.js
+* [ ] Put css files separate from js files
 
 ## TASK
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
