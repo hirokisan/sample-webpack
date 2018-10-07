@@ -43,6 +43,9 @@ $ npm run prod
 * [ ] Load fontawesome with webpack
 * [ ] Pass args to webpack.config.js
 * [ ] Put css files separate from js files
+* [ ] Minify CSS
+* [ ] Minify JS
+* [ ] Use CSS Grid
 
 ## TASK
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
@@ -52,3 +55,4 @@ $ npm run prod
 * [npm package.json 日本語版 取扱説明書](http://liberty-technology.biz/PublicItems/npm/package.json.html)
 * [Webpack Module Methods](https://webpack.js.org/api/module-methods/)
 * [JSON Example](https://json.org/example.html)
+* [CSS Grid Layout を極める！（基礎編）](https://qiita.com/kura07/items/e633b35e33e43240d363)
