@@ -37,11 +37,15 @@ module.exports = {
       },
       {
         test: /\.(csv|tsv)$/,
-        loader: 'csv-loader',
-        options: {
-          header: true,
-          skipEmptyLines: true
-        }
+        use: [
+          {
+            loader: 'csv-loader',
+            options: {
+              header: true,
+              skipEmptyLines: true
+            }
+          }
+        ],
       },
       {
         test: /\.(yaml|yml)$/,
