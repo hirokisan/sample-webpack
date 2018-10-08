@@ -38,6 +38,11 @@ $ npm run prod
 ### Json
 * [json-loader](https://www.npmjs.com/package/json-loader)
 
+### Pug
+* [pug](https://www.npmjs.com/package/pug)
+* [pug-loader](https://www.npmjs.com/package/pug-loader)
+* [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
+
 ## TODO
 * [ ] Load dist image from app/index.html
 * [ ] Load fontawesome with webpack
@@ -56,3 +61,4 @@ $ npm run prod
 * [Webpack Module Methods](https://webpack.js.org/api/module-methods/)
 * [JSON Example](https://json.org/example.html)
 * [CSS Grid Layout を極める！（基礎編）](https://qiita.com/kura07/items/e633b35e33e43240d363)
+* [Pug](https://pugjs.org/api/getting-started.html)

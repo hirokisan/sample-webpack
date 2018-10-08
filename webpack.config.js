@@ -1,4 +1,5 @@
-const path = require('path');
+const path              = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -10,6 +11,12 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.pug/,
+        use: [
+          'pug-loader'
+        ]
+      },
       {
         test: /\.css$/,
         /*
@@ -104,6 +111,14 @@ module.exports = {
       */
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'sample',
+      filename: 'hello.html',
+      template: 'src/pug/hello.pug',
+      inject: false,
+    })
+  ],
   optimization: {
     splitChunks: {
       cacheGroups: {
