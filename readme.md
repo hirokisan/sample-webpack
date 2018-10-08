@@ -54,7 +54,7 @@ $ npm run prod
 
 ## TASK
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
-* [ ] [Asset Management](https://webpack.js.org/guides/asset-management/)
+* [x] [Asset Management](https://webpack.js.org/guides/asset-management/)
 
 ## REF
 * [npm package.json 日本語版 取扱説明書](http://liberty-technology.biz/PublicItems/npm/package.json.html)
