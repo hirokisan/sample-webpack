@@ -44,7 +44,6 @@ $ npm run prod
 * [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
 
 ## TODO
-* [ ] Load dist image from app/index.html
 * [ ] Load fontawesome with webpack
 * [ ] Pass args to webpack.config.js
 * [ ] Pass args to pug template
