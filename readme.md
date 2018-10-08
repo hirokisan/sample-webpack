@@ -51,6 +51,7 @@ $ npm run prod
 * [ ] Minify CSS
 * [ ] Minify JS
 * [ ] Use CSS Grid
+* [ ] Rewrite code following webpack4
 
 ## TASK
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
