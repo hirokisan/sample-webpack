@@ -53,7 +53,7 @@ $ npm run prod
 * [ ] Pass args to webpack.config.js
 * [x] Pass args to pug template
 * [x] Put css files separate from js files
-* [ ] Minify CSS
+* [x] Minify CSS
 * [ ] Minify JS
 * [ ] Use CSS Grid
 * [ ] Rewrite code following webpack4
