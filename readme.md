@@ -42,17 +42,16 @@ $ npm run prod
 * [pug](https://www.npmjs.com/package/pug)
 * [pug-loader](https://www.npmjs.com/package/pug-loader)
 
-### HTML
-* [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
-
 ### Util
 * [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
+* [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)
+* [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
 
 ## TODO
 * [ ] Load fontawesome with webpack
 * [ ] Pass args to webpack.config.js
 * [x] Pass args to pug template
-* [ ] Put css files separate from js files
+* [x] Put css files separate from js files
 * [ ] Minify CSS
 * [ ] Minify JS
 * [ ] Use CSS Grid

@@ -1,6 +1,7 @@
-const path               = require('path');
-const HtmlWebpackPlugin  = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path                    = require('path');
+const HtmlWebpackPlugin       = require('html-webpack-plugin')
+const CleanWebpackPlugin      = require('clean-webpack-plugin');
+const MiniCssExtractPlugin    = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
@@ -19,11 +20,13 @@ module.exports = {
          * @example 1. css-loader 2. style-loader
          */
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
+          //'style-loader',
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
+              importLoaders: 1,
             }
           },
           {
@@ -39,11 +42,13 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          //'style-loader',
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
+              importLoaders: 1,
             }
           },
           "sass-loader",
@@ -114,6 +119,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    }),
     new HtmlWebpackPlugin({
       title: 'sample',
       filename: 'hello.html',
