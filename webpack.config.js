@@ -12,12 +12,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.pug/,
-        use: [
-          'pug-loader'
-        ]
-      },
-      {
         test: /\.css$/,
         /*
          * use: ran right to left
