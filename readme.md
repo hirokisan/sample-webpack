@@ -35,13 +35,18 @@ $ npm run prod
 ### Yaml
 * [yaml-loader](https://www.npmjs.com/package/yaml-loader)
 
-### Json
+### Json(Support for JSON is actually built-in)
 * [json-loader](https://www.npmjs.com/package/json-loader)
 
 ### Pug
 * [pug](https://www.npmjs.com/package/pug)
 * [pug-loader](https://www.npmjs.com/package/pug-loader)
+
+### HTML
 * [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
+
+### Util
+* [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 
 ## TODO
 * [ ] Load fontawesome with webpack
