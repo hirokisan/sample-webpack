@@ -2,6 +2,7 @@ const path                    = require('path');
 const HtmlWebpackPlugin       = require('html-webpack-plugin')
 const CleanWebpackPlugin      = require('clean-webpack-plugin');
 const MiniCssExtractPlugin    = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -21,7 +22,6 @@ module.exports = {
          */
         use: [
           MiniCssExtractPlugin.loader,
-          //'style-loader',
           {
             loader: 'css-loader',
             options: {
@@ -42,7 +42,6 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          //'style-loader',
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
@@ -147,6 +146,9 @@ module.exports = {
           enforce: true
         }
       }
-    }
+    },
+    minimizer: [
+      new OptimizeCSSAssetsPlugin({})
+    ]
   }
 };

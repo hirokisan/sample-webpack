@@ -46,6 +46,7 @@ $ npm run prod
 * [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 * [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)
 * [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
+* [optimize-css-assets-webpack-plugin](https://www.npmjs.com/package/optimize-css-assets-webpack-plugin)
 
 ## TODO
 * [ ] Load fontawesome with webpack
