@@ -46,7 +46,7 @@ $ npm run prod
 ## TODO
 * [ ] Load fontawesome with webpack
 * [ ] Pass args to webpack.config.js
-* [ ] Pass args to pug template
+* [x] Pass args to pug template
 * [ ] Put css files separate from js files
 * [ ] Minify CSS
 * [ ] Minify JS
@@ -63,3 +63,4 @@ $ npm run prod
 * [JSON Example](https://json.org/example.html)
 * [CSS Grid Layout を極める！（基礎編）](https://qiita.com/kura07/items/e633b35e33e43240d363)
 * [Pug](https://pugjs.org/api/getting-started.html)
+* [Pug option](https://pugjs.org/api/reference.html)

@@ -117,7 +117,7 @@ module.exports = {
       filename: 'hello.html',
       template: '!!pug-loader!src/pug/hello.pug',
       inject: false,
-      h1: 'Hello world'
+      data: require('./src/json/hello.json')
     })
   ],
   optimization: {
