@@ -118,6 +118,12 @@ module.exports = {
       template: '!!pug-loader!src/pug/hello.pug',
       inject: false,
       data: require('./src/json/hello.json')
+    }),
+    new HtmlWebpackPlugin({
+      title: 'sample',
+      filename: 'index.html',
+      template: 'src/html/index.html',
+      inject: 'body'
     })
   ],
   optimization: {
