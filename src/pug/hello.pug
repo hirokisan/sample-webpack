@@ -1,6 +1,8 @@
+- var h1 = htmlWebpackPlugin.options.h1
+
 doctype html
 html(lang="en")
 	head
 		title= htmlWebpackPlugin.options.title
 	body
-		h1 sample
+		h1 #{h1}

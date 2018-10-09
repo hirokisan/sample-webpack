@@ -115,8 +115,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'sample',
       filename: 'hello.html',
-      template: 'src/pug/hello.pug',
+      template: '!!pug-loader!src/pug/hello.pug',
       inject: false,
+      h1: 'Hello world'
     })
   ],
   optimization: {
