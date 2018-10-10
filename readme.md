@@ -15,6 +15,11 @@ $ npm run dev
 $ npm run prod
 ```
 
+## Image Process with nodejs
+```
+$ node src/js/jimp.js
+```
+
 ## Modules
 
 ### CSS
@@ -42,6 +47,9 @@ $ npm run prod
 * [pug](https://www.npmjs.com/package/pug)
 * [pug-loader](https://www.npmjs.com/package/pug-loader)
 
+### Image Process
+* [jimp](https://www.npmjs.com/package/jimp)
+
 ### Util
 * [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 * [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)
@@ -58,6 +66,7 @@ $ npm run prod
 * [ ] Use CSS Grid
 * [ ] Rewrite code following webpack4
 * [ ] Debug webpack.config.js
+* [ ] Use jimp
 
 ## TASK
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
@@ -70,3 +79,5 @@ $ npm run prod
 * [CSS Grid Layout を極める！（基礎編）](https://qiita.com/kura07/items/e633b35e33e43240d363)
 * [Pug](https://pugjs.org/api/getting-started.html)
 * [Pug option](https://pugjs.org/api/reference.html)
+* [DefinePlugin](https://webpack.js.org/plugins/define-plugin/)
+* [Module not found: Error: Can't resolve 'fs'](https://github.com/webpack-contrib/css-loader/issues/447)
