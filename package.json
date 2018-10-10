@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production"
+    "dev": "node ./src/js/jimp.js && webpack --mode development",
+    "prod": "node ./src/js/jimp.js && webpack --mode production"
   },
   "keywords": [
     "webpack4"

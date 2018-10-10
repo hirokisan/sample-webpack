@@ -66,7 +66,7 @@ $ node src/js/jimp.js
 * [ ] Use CSS Grid
 * [ ] Rewrite code following webpack4
 * [ ] Debug webpack.config.js
-* [ ] Use jimp
+* [x] Use jimp
 
 ## TASK
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)

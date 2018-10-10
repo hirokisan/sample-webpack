@@ -5,7 +5,7 @@ import '../css/style.css';
 import csv  from '../csv/name.csv';
 import yml  from '../yml/name.yml';
 import json from '../json/name.json';
-import Icon from '../img/icon.png';
+import Icon from '../img/tmp/big-icon.png';
 
 function component() {
   let element = document.createElement('div');

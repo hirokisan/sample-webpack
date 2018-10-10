@@ -117,7 +117,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist', 'src/img/tmp'], {beforeEmit: true}),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
