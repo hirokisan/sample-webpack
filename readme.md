@@ -73,6 +73,8 @@ $ node src/js/jimp.js
 * [x] [Getting Started](https://webpack.js.org/guides/getting-started/)
 * [x] [Asset Management](https://webpack.js.org/guides/asset-management/)
 * [x] [DevServer](https://webpack.js.org/configuration/dev-server/)
+* [x] [Production](https://webpack.js.org/guides/production/)
+* [x] [Mode](https://webpack.js.org/concepts/mode/)
 
 ## REF
 * [npm package.json 日本語版 取扱説明書](http://liberty-technology.biz/PublicItems/npm/package.json.html)
