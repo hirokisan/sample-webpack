@@ -1,3 +1,4 @@
+const path   = require('path');
 const merge  = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -5,6 +6,12 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase      : path.join(__dirname, 'dist'),
+    port             : 3000,
+    https            : true,
+    open             : true,
+    publicPath       : '/',
+    stats            : 'errors-only',
+    watchContentBase : true
   }
 });

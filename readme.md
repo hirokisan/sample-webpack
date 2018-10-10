@@ -55,6 +55,7 @@ $ node src/js/jimp.js
 * [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)
 * [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
 * [optimize-css-assets-webpack-plugin](https://www.npmjs.com/package/optimize-css-assets-webpack-plugin)
+* [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server)
 
 ## TODO
 * [ ] Load fontawesome with webpack
