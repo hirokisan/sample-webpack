@@ -50,7 +50,7 @@ $ npm run prod
 
 ## TODO
 * [ ] Load fontawesome with webpack
-* [ ] Pass args to webpack.config.js
+* [ ] Separate config for development adn production
 * [x] Pass args to pug template
 * [x] Put css files separate from js files
 * [x] Minify CSS
