@@ -32,7 +32,7 @@ module.exports = merge(common, {
         test: /\.css$/,
         /*
          * use: ran right to left
-         * @example 1. css-loader 2. style-loader
+         * @example 1. css-loader 2. MiniCssExtractPlugin.loader
          */
         use: [
           MiniCssExtractPlugin.loader,
