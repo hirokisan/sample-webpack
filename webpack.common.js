@@ -1,8 +1,6 @@
 const path                    = require('path');
 const HtmlWebpackPlugin       = require('html-webpack-plugin')
 const CleanWebpackPlugin      = require('clean-webpack-plugin');
-const MiniCssExtractPlugin    = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -14,53 +12,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        /*
-         * use: ran right to left
-         * @example 1. css-loader 2. style-loader
-         */
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              importLoaders: 1,
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [
-                require('autoprefixer')({grid: true})
-              ]
-            }
-          }
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              importLoaders: 1,
-            }
-          },
-          "sass-loader",
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: [
-                require('autoprefixer')({grid: true})
-              ]
-            }
-          }
-        ]
-      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
@@ -118,10 +69,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist', 'src/img/tmp'], {beforeEmit: true}),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
     new HtmlWebpackPlugin({
       title: 'sample',
       filename: 'hello.html',
@@ -136,19 +83,4 @@ module.exports = {
       inject: 'body'
     })
   ],
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /node_modules/,
-          name: 'vendor',
-          chunks: 'initial',
-          enforce: true
-        }
-      }
-    },
-    minimizer: [
-      new OptimizeCSSAssetsPlugin({})
-    ]
-  }
 };
